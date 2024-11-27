@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Adicionar Disco</title>
+</head>
+<body>
+    <h1>Adicionar Novo Disco</h1>
+    <form action="/discos/novo" method="POST">
+        <label>Título:</label>
+        <input type="text" name="titulo" required>
+        <label>Ano:</label>
+        <input type="number" name="ano" required>
+        <label>Gênero:</label>
+        <input type="text" name="generoNome" required>
+        <label>Artista:</label>
+        <input type="text" name="artistaNome" required>
+        <label>Faixas (separadas por vírgula):</label>
+        <input type="text" name="faixas">
+        <button type="submit">Salvar</button>
+    </form>
+</body>
+</html>
